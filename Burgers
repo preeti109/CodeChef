@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int t;
+	scanf("%d", &t);
+	while(t--){
+	    int b,p;
+	    scanf("%d %d", &b,&p);
+	    if(b>p){
+	        printf("%d\n", p);
+	    }else if(p>b){
+	        printf("%d\n", b);
+	    }else if(b==p){
+	        printf("%d\n", b);
+	    }
+	}
+	return 0;
+}
+
