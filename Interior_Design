@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int t;
+	scanf("%d", &t);
+	while(t--){
+	    int u, v, w, x, a, b;
+	    scanf("%d %d %d %d", &u, &v, &w, &x);
+	    a = u + v;
+	    b = w + x;
+	    if(a<b){
+	        printf("%d\n", a);
+	    }else{
+	        printf("%d\n", b);
+	    }
+	}
+	return 0;
+}
