@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(void) {
+	int t, x;
+	scanf("%d", &t);
+	while(t--){
+	    scanf("%d", &x);
+	    if(x>65)
+	    printf("overload\n");
+	    else if(x<35)
+	    printf("underload\n");
+	    else
+	    printf("normal\n");
+	}
+	return 0;
+}
+
