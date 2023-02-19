@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(void) {
+	int t, a, b, c;
+	scanf("%d", &t);
+	while(t--){
+	    scanf("%d %d %d", &a, &b, &c);
+	    if(a<b && a<c)
+	    printf("alice\n");
+	    else if(b<a && b<c)
+	    printf("bob\n");
+	    else 
+	    printf("charlie\n");
+	}
+	return 0;
+}
+
