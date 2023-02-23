@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int w, x, y, z;
+	scanf("%d %d %d %d", &w, &x, &y, &z);
+	if(w==z || x==z || y==z)
+	printf("yes\n");
+	else
+	printf("no\n");
+	return 0;
+}
+
