@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int t, x, y;
+	scanf("%d", &t);
+	while(t--){
+	    scanf("%d %d", &x, &y);
+	    if(100-x < 200-2*y)
+	    printf("first\n");
+	    else if(100-x > 200-2*y)
+	    printf("second\n");
+	    else
+	    printf("both\n");
+	}
+	return 0;
+}
+
