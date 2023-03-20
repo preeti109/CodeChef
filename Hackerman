@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(void) {
+	// your code goes here
+	int t;
+	scanf("%d", &t);
+	while(t--){
+	    int a,b,i,count=0;
+	    scanf("%d %d", &a, &b);
+	    int s=a+b;
+	    for(i=1;i<=s;i++){
+	        if(s%i==0){
+	          count++;
+	        }
+	    }if(count==2)
+	    printf("Alice\n");
+	    else
+	    printf("Bob\n");
+	}
+	return 0;
+}
