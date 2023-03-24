@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int T,A,B,C;
+    scanf("%d",&T);
+    while(T--)
+    {
+        scanf("%d %d",&A,&B);
+        if(1<=21-(A+B) && 21-(A+B)<=10)
+        {
+            printf("%d\n",21-(A+B));
+        }
+        else
+        printf("%d\n",-1);
+    }
+    return 0;
+}
