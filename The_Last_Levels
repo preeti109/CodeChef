@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(void) {
+	int t, X, Y, Z;
+	scanf("%d", &t);
+	while(t--){
+	    scanf("%d %d %d", &X, &Y, &Z);
+	    if(X%3 != 0)
+	    printf("%d\n", X*Y+(X/3)*Z);
+	    else
+	    printf("%d\n", X*Y+(X/3-1)*Z);
+	}
+	return 0;
+}
+
