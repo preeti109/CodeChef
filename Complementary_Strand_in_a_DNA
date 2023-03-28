@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main(void) {
+	int i, n;
+	scanf("%d", &n);
+	for(i=0; i<n; i++){
+	    int x, t;
+	    scanf("%d", &x);
+	    char a[x];
+	    scanf("%s", &a);
+	    for(t=0; t<x; t++){
+	        if(a[t]=='A')
+	        a[t]='T';
+	        else if(a[t]=='T')
+	        a[t]='A';
+	        else if(a[t]=='C')
+	        a[t]='G';
+	        else if(a[t]=='G')
+	        a[t]='C';
+	    }
+	    printf("%s\n", a);
+	}
+	return 0;
+}
+
+
