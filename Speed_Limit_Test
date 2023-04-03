@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(void) {
+	int t;
+	float a,x,b,y;
+	scanf("%d", &t);
+	while(t--){
+	    scanf("%f %f %f %f", &a, &x, &b, &y);
+	    if((a/x) > (b/y))
+	    printf("alice\n");
+	    else if((a/x) < (b/y))
+	    printf("bob\n");
+	    else
+	    printf("equal\n");
+	}
+	return 0;
+}
+
