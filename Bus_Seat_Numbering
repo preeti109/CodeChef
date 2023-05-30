@@ -1,0 +1,19 @@
+/* package codechef; // don't place package name! */
+
+import java.util.Scanner;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner in = new Scanner(System.in);
+		int T = in.nextInt(); 
+		for(int i=0;i<T;i++){
+		   int n = in.nextInt();
+		   System.out.println((n>=0 && n<=10)?"Lower Double":(n>=11 && n<=15)?"Lower Single":(n>=16 && n<=25)?"Upper Double":"Upper Single");
+		}
+		
+	}
+}
