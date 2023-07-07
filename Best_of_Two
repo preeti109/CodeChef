@@ -1,0 +1,27 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Codechef {
+	public static void main (String[] args) throws java.lang.Exception {
+		Scanner read = new Scanner(System.in);
+		int t = read.nextInt();
+		for(int i=0; i<t; i++){
+		    int a1 = read.nextInt();
+		    int a2 = read.nextInt();
+		    int a3 = read.nextInt();
+		    int b1 = read.nextInt();
+		    int b2 = read.nextInt();
+		    int b3 = read.nextInt();
+		    int a = Math.min(a1, Math.min(a2, a3));
+		    int b = Math.min(b1, Math.min(b2, b3));
+		    int x = a1 + a2 + a3 - a;
+		    int y = b1 + b2 + b3 - b;
+		    if(x>y)
+		        System.out.println("Alice");
+		    else if(x<y)
+		        System.out.println("Bob");
+		    else
+		        System.out.println("Tie");
+		}
+	}
+}
