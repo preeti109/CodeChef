@@ -1,0 +1,29 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef {
+	public static void main (String[] args) throws java.lang.Exception {
+		Scanner sc = new Scanner(System.in);
+    	int t = sc.nextInt();
+    	
+    	while(t-->0) {
+    	    int n = sc.nextInt();
+    	    int x = sc.nextInt();
+    	    int fresh[] = new int[n];
+    	    int cost[] = new int[n];
+    	    int total = 0;
+    	    
+		    for(int i=0; i<n; i++)
+		        fresh[i] = sc.nextInt();
+		    for(int j=0; j<n; j++)
+		        cost[j] = sc.nextInt();
+		        
+		    for(int k=0; k<n; k++) {
+		        if(fresh[k]>=x)
+		            total += cost[k];
+		    }
+		    System.out.println(total);
+    	}
+	}
+}
