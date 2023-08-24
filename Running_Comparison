@@ -1,0 +1,25 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef {
+	public static void main (String[] args) throws java.lang.Exception {
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++) {
+		    int n = sc.nextInt();
+		    int arr1[] = new int[n];
+		    int arr2[] = new int[n];
+		    int count=0;
+		    for(int j=0; j<n; j++) 
+		        arr1[j] = sc.nextInt();
+		    for(int k=0; k<n; k++) 
+		        arr2[k] = sc.nextInt();
+		    for(int a=0; a<n; a++) {
+		        if(2*arr1[a] >= arr2[a] && arr1[a] <= 2*arr2[a]) 
+		            count++;
+		    }
+		 System.out.println(count);
+		}
+	}
+}
