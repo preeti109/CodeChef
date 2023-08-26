@@ -1,0 +1,21 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef {
+	public static void main (String[] args) throws java.lang.Exception{
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		while(T-->0) {
+		    char f = sc.next().charAt(0);
+		    char s = sc.next().charAt(0);
+		    char t = sc.next().charAt(0);
+		    char x = sc.next().charAt(0);
+		    char y = sc.next().charAt(0);
+		    if(x==f || y==f)
+		    System.out.println(f);
+		    else
+		    System.out.println(s);
+		}
+	}
+}
